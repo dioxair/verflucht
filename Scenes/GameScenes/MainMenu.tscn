@@ -15,8 +15,8 @@ shader_param/_gradation = 0.5
 
 [sub_resource type="DynamicFont" id=2]
 size = 115
-outline_size = 5
-outline_color = Color( 1, 0.482353, 0.482353, 1 )
+outline_size = 6
+outline_color = Color( 0.101961, 0.0196078, 0.0196078, 1 )
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=3]
