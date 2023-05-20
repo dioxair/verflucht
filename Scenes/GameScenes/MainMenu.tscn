@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assets/Graphics/Graphics.tres" type="Environment" id=1]
 [ext_resource path="res://Assets/Shaders/bg.shader" type="Shader" id=2]
 [ext_resource path="res://Assets/Fonts/Quicksand-Bold.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Scripts/MainMenu.cs" type="Script" id=4]
 [ext_resource path="res://Assets/Fonts/Quicksand-Medium.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/Themes/Button/Button.tres" type="Theme" id=6]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 2 )
@@ -56,6 +57,7 @@ margin_top = -48.5
 margin_right = 130.0
 margin_bottom = 51.5
 rect_pivot_offset = Vector2( 287, 81.5 )
+theme = ExtResource( 6 )
 custom_fonts/font = SubResource( 3 )
 text = "Play"
 
@@ -69,6 +71,7 @@ margin_top = 69.0
 margin_right = 181.5
 margin_bottom = 169.0
 rect_pivot_offset = Vector2( 287, 81.5 )
+theme = ExtResource( 6 )
 custom_fonts/font = SubResource( 3 )
 text = "Settings"
 
