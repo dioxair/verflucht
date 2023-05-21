@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Graphics/Graphics.tres" type="Environment" id=1]
 [ext_resource path="res://Assets/Shaders/bg.shader" type="Shader" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scripts/MainMenu.cs" type="Script" id=4]
 [ext_resource path="res://Assets/Fonts/Quicksand-Medium.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Assets/Themes/Button/Button.tres" type="Theme" id=6]
+[ext_resource path="res://Scripts/Buttons/PlayButton.cs" type="Script" id=7]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 2 )
@@ -60,6 +61,7 @@ rect_pivot_offset = Vector2( 287, 81.5 )
 theme = ExtResource( 6 )
 custom_fonts/font = SubResource( 3 )
 text = "Play"
+script = ExtResource( 7 )
 
 [node name="SettingsButton" type="Button" parent="Control"]
 anchor_left = 0.5
@@ -77,3 +79,5 @@ text = "Settings"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 1 )
+
+[connection signal="pressed" from="Control/PlayButton" to="Control/PlayButton" method="_on_PlayButton_pressed"]
