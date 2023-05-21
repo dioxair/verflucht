@@ -1,7 +1,7 @@
 using System;
 using Godot;
 
-namespace Verflucht.Scripts
+namespace Verflucht.Scripts.Game
 {
 	public class Player : KinematicBody2D
 	{
