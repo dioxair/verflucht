@@ -10,13 +10,13 @@ namespace Verflucht.Scripts.Game
 
 		private void AllDirections()
 		{
-			foreach (float i in BulletPatterns.AllDirections)
+			foreach (float i in BulletPatterns.AllDirectionsPattern.Angles)
 			{
-				if (!(_bullet.Instance() is Bullet bullet)) continue;
+				if (_bullet.Instance() is not Bullet bullet) continue;
 				bullet.Angle = i + Mathf.Rad2Deg(Rotation);
-				bullet.MaxSpeed = 200;
-				bullet.AccelerationSpeed = 30;
-				bullet.Speed = 50;
+				bullet.MaxSpeed = BulletPatterns.AllDirectionsPattern.MaxSpeed;
+				bullet.AccelerationSpeed = BulletPatterns.AllDirectionsPattern.AccelerationSpeed;
+				bullet.Speed = BulletPatterns.AllDirectionsPattern.Speed;
 				bullet.Position = Position + new Vector2(0 * Mathf.Cos(Rotation), 50 * Mathf.Sin(Rotation));
 				GetParent().AddChild(bullet);
 			}
