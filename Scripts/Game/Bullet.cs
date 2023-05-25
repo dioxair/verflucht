@@ -16,8 +16,7 @@ namespace Verflucht.Scripts.Game
 		public override void _Process(float delta)
 		{
 			Speed += AccelerationSpeed;
-			if (Speed >= MaxSpeed)
-				Speed = MaxSpeed;
+			Speed = Mathf.Clamp(Speed, Speed, MaxSpeed);
 			Position += new Vector2(Mathf.Cos(Mathf.Deg2Rad(Angle)), Mathf.Sin(Mathf.Deg2Rad(Angle))) * Speed * delta;
 		}
 
