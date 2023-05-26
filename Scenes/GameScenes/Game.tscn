@@ -30,4 +30,4 @@ position = Vector2( 640, 360 )
 environment = ExtResource( 3 )
 
 [node name="Boss" parent="." instance=ExtResource( 4 )]
-position = Vector2( 634, 52 )
+position = Vector2( 634, 34 )

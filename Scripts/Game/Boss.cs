@@ -12,7 +12,7 @@ namespace Verflucht.Scripts.Game
 			foreach (float i in bulletPattern.Angles)
 			{
 				if (_bullet.Instance() is not Bullet bullet) continue;
-				bullet.Angle = i + Mathf.Rad2Deg(Rotation);
+				bullet.Angle = -i + Mathf.Rad2Deg(Rotation);
 				bullet.MaxSpeed = bulletPattern.MaxSpeed;
 				bullet.AccelerationSpeed = bulletPattern.AccelerationSpeed;
 				bullet.Speed = bulletPattern.Speed;
