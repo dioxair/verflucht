@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites/Bullet.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Game/Bullet.cs" type="Script" id=2]
 
 [node name="Bullet" type="Sprite"]
@@ -8,7 +8,7 @@ texture = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="IsOnScreen" type="VisibilityNotifier2D" parent="."]
-position = Vector2( 0, -1.90735e-06 )
-scale = Vector2( 3.2, 3.2 )
+position = Vector2( 0.500001, -0.5 )
+scale = Vector2( 1.55, 1.55 )
 
 [connection signal="screen_exited" from="IsOnScreen" to="." method="ExitedScreen"]

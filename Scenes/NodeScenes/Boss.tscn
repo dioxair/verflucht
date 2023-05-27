@@ -1,9 +1,10 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/Game/Boss.cs" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites/Boss.png" type="Texture" id=2]
 
 [node name="Boss" type="Sprite"]
+scale = Vector2( 3.5, 3.5 )
 texture = ExtResource( 2 )
 script = ExtResource( 1 )
 
